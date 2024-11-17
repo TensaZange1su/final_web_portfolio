@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks and Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-brand">Task & Portfolio Manager</div>
+        <ul class="navbar-links">
+            <li><a href="#" id="tasksTab" onclick="showSection('tasks')">Tasks</a></li>
+            <li><a href="#" id="portfolioTab" onclick="showSection('portfolio')">Portfolio</a></li>
+            <li><a href="/profile.html">Profile</a></li>
+            <li><a href="/login.html" onclick="logout()">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Sections -->
+    <div class="container">
+        <!-- Tasks Section -->
+        <div id="tasksSection" class="section">
+            <h1>Tasks</h1>
+            <div>
+                <input type="text" id="taskInput" placeholder="New Task">
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+            <h2>Task List</h2>
+            <div id="tasks"></div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div id="portfolioSection" class="section" style="display: none;">
+            <h1>Portfolio</h1>
+            <div>
+                <input type="text" id="portfolioTitle" placeholder="Title">
+                <textarea id="portfolioDescription" placeholder="Description"></textarea>
+                <input type="file" id="portfolioImages" multiple>
+                <button id="addPortfolioBtn">Add Portfolio Item</button>
+            </div>
+            <h2>Portfolio Items</h2>
+            <div id="portfolioItems"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <div>
+            <input type="text" id="registerFirstName" placeholder="First Name" required>
+            <input type="text" id="registerLastName" placeholder="Last Name" required>
+            <input type="number" id="registerAge" placeholder="Age" required>
+            <select id="registerGender" required>
+                <option value="" disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="email" id="registerEmail" placeholder="Email" required>
+            <input type="text" id="registerUsername" placeholder="Username" required>
+            <input type="password" id="registerPassword" placeholder="Password" required>
+            <button id="registerBtn">Register</button>
+        </div>
+        <p>Already have an account? <a href="/login.html">Login here</a>.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
