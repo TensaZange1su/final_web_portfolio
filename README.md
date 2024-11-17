@@ -42,32 +42,28 @@ MongoDB with Mongoose ODM
 Installation
 1. Clone the repository
 bash
-Копировать код
 git clone https://github.com/your-username/portfolio-task-manager.git
 cd portfolio-task-manager
 2. Install dependencies
 bash
-Копировать код
 npm install
 3. Set up environment variables
 Create a .env file in the root directory and add the following:
 
 makefile
-Копировать код
+
 PORT=3000
 MONGO_URI=mongodb://localhost:27017/portfolio_task_manager
 JWT_SECRET=your_jwt_secret
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_email_password
+EMAIL_USER=almas.kuratov3@mail.ru
+EMAIL_PASS=xxxxxxxxxxxxx
 4. Start the server
 bash
-Копировать код
 node index.js
 The server will start at http://localhost:3000.
 
 File Structure
 bash
-Копировать код
 .
 ├── models/
 │   ├── task.js         # Task schema
